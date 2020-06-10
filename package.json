@@ -12,7 +12,9 @@
 		"express": "^4.12.4",
 		"mongodb": "^3.5.8",
 		"mongoose": "^5.9.18",
-		"cors": "^2.8.1"
+		"cors": "^2.8.1",
+		"shortid": "^2.2.15",
+		"valid-url": "^1.0.9"
 	},
 	"engines": {
 		"node": "10.17.0"
