@@ -27,11 +27,23 @@ app.get('/', function(req, res){
 
   
 // your first API endpoint... 
-app.get("/api/hello", function (req, res) {
-  res.json({greeting: 'hello API'});
+app.get("/api/shorturl/new", function (req, res) {
+  let originalURL;
+  let shortURL;
+
+  if (condition) {
+    res.json({
+      original_url: originalURL,
+      short_url: shortURL
+    }); 
+  } else {
+    res.json({
+      error: 'invalid URL'
+    });
+  }
 });
 
 
 app.listen(port, function () {
-  console.log('Node.js listening ...');
+  console.log(`Node.js listening on port ${port}`);
 });
